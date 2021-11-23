@@ -14,75 +14,122 @@ body{
     background-color: rgb(226, 225, 225);
     font-family: 'Bebas Neue', sans-serif;
 }
+
+/* .rightContainer{
+    display: flex;
+
+} */
+
+.menu img{
+    padding:0;
+}
 /* HAMBURGERICON */
-.hamburgerIcon{
-    display: inline-block;
-    position: relative;
+/*container for the hamburgermenu*/
+
+.hamburgerMenuBtn {
+    cursor: pointer;
+    position: fixed;
+    height: 0.9rem;
+    right: 1rem;
+    top: 1.5rem;
+    display: flex;
 }
 
-.hamburgerIconContent {
-    color: rgb(255, 255, 255);
+/*creates all lines for hamburgericon*/
+
+.hamburgerIcon {
+    color: white;
     background-color: currentColor;
     height: 0.3055525rem;
-    width: 2.0625rem;
-    position: absolute;
-    top:  50%;
+    width: 3.0625rem;
+    /* position: absolute; */
     border-radius: 1px;
-    margin-top: -0.1527625rem;
-    display: block;
+    margin-top: -0.2rem;
     transition-duration: .22s;
-    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-timing-function: cubic-bezier(.55, .055, .675, .19);
 }
 
-.hamburgerIconContent.active {
+/*on click animations*/
+
+/*hides one line and makes a +, spins for X*/
+
+.hamburgerIcon.active {
     transform: rotate( 225deg);
     transition-delay: .12s;
     transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-
-.hamburgerIconContent:before {
+.hamburgerIcon:before {
     height: 0.3055525rem;
-    width:2.0625rem;
+    width: 3.0625rem;
     content: '';
     background-color: currentColor;
     border-radius: 1px;
     display: block;
     position: absolute;
-    top: -0.53472375rem;
+    top: -0.9rem;
     transition: top .1s ease-in .25s, opacity .1s ease-in;
 }
 
-.hamburgerIconContent.active::before {
-    top: 0; 
+.hamburgerIcon.active::before {
+    top: 0;
     opacity: 0;
-    transition: top .1s ease-out,opacity .1s ease-out .12s;
+    transition: top .1s ease-out, opacity .1s ease-out .12s;
 }
 
-.hamburgerIconContent:after {
+.hamburgerIcon:after {
     height: 0.3055525rem;
     border-radius: 1px;
-    width:2.0625rem;
+    width: 3.0625rem;
     content: '';
     background-color: currentColor;
     display: block;
     position: absolute;
-    bottom: -0.53472375rem;
-    transition: bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19);
+    bottom: 0.05rem;
+    transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19);
 }
 
-.hamburgerIconContent.active::after {
+.hamburgerIcon.active::after {
     bottom: 0;
     transform: rotate(-90deg);
-    transition: bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;
+    transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
 }
+
 /*STOP HAMBURGER ICON*/
+
+/*menu when clicking hamburgerMenu*/
+
+.menu {
+    display: block;
+    position: fixed;
+    background: var(--clr-dark-blue);
+    top: 4rem;
+    right: 0;
+    color: black;
+    z-index: 60;
+    max-width: 39rem;
+    width: 100%;
+    display: flex;
+    gap: 14vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    transition: all 250ms ease-in-out;
+    transform: translateX(100%);
+    background-color: white;
+}
+
+.menu.active,
+.menu:focus-within {
+    transform: translateX(0);
+}
 
 .header{
     background-color: rgb(0, 0, 0);
     height: 50vh;
     display: flex;
-    width: 100vw;
+    width: 100%;
 }
 
 h1{
@@ -109,7 +156,7 @@ p{
 
 .textBackground{
     background-color: black;
-    width: 100vw;
+    width: 100%;
     margin: 0;
 }
 .textBackground h2{
@@ -119,7 +166,6 @@ p{
 
 
 .container{
-    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -132,7 +178,6 @@ p{
 
 .mainContainer{
     padding: 3rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,7 +213,11 @@ li{
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     grid-column-end: span 2;
     margin: -3vh 1vw;
+    transition: transform .2s;
 }
+
+.hexagon:hover {
+    transform: scale(1.2);}
 
 .hexagon:nth-of-type(5n + 1) {
     grid-column-start: 2;
