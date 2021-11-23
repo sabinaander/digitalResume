@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.whiteText{
+    color: white;
+}
+
+body{
+    background-color: rgb(226, 225, 225);
+    font-family: 'Bebas Neue', sans-serif;
+}
+/* HAMBURGERICON */
+.hamburgerIcon{
+    display: inline-block;
+    position: relative;
+}
+
+.hamburgerIconContent {
+    color: rgb(255, 255, 255);
+    background-color: currentColor;
+    height: 0.3055525rem;
+    width: 2.0625rem;
+    position: absolute;
+    top:  50%;
+    border-radius: 1px;
+    margin-top: -0.1527625rem;
+    display: block;
+    transition-duration: .22s;
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+}
+
+.hamburgerIconContent.active {
+    transform: rotate( 225deg);
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+
+.hamburgerIconContent:before {
+    height: 0.3055525rem;
+    width:2.0625rem;
+    content: '';
+    background-color: currentColor;
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    top: -0.53472375rem;
+    transition: top .1s ease-in .25s, opacity .1s ease-in;
+}
+
+.hamburgerIconContent.active::before {
+    top: 0; 
+    opacity: 0;
+    transition: top .1s ease-out,opacity .1s ease-out .12s;
+}
+
+.hamburgerIconContent:after {
+    height: 0.3055525rem;
+    border-radius: 1px;
+    width:2.0625rem;
+    content: '';
+    background-color: currentColor;
+    display: block;
+    position: absolute;
+    bottom: -0.53472375rem;
+    transition: bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19);
+}
+
+.hamburgerIconContent.active::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;
+}
+/*STOP HAMBURGER ICON*/
+
+.header{
+    background-color: rgb(0, 0, 0);
+    height: 50vh;
+    display: flex;
+    width: 100vw;
+}
+
+h1{
+    letter-spacing: 1rem;
+    font-size: 10rem;
+    padding: 2rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 3.5rem;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.textBackground{
+    background-color: black;
+    width: 100vw;
+    margin: 0;
+}
+.textBackground h2{
+    color: white;
+    text-align: center;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container img{
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;  
+    padding: 5rem;  
+}
+
+.mainContainer{
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionContainer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20rem;
+}
+
+li{
+    font-size: 1.5rem;
+}
+
+.projectContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridContainer{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-content: center;
+}
+
+.hexagon{
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    grid-column-end: span 2;
+    margin: -3vh 1vw;
+}
+
+.hexagon:nth-of-type(5n + 1) {
+    grid-column-start: 2;
+}
+
+.project1{
+    background-image: url(/media/sabinaandersson.jpg);
+    background-size: cover;
+    height: 323px;
+    width: 280px;
+}
+.project2{
+    background-image: url(/media/sabinaandersson.jpg);
+    background-size: cover;
+    height: 323px;
+    width: 280px;
+}
+.project3{
+    background-image: url(/media/sabinaandersson.jpg);
+    background-size: cover;
+    height: 323px;
+    width: 280px;
+}
+.project4{
+    background-image: url(/media/sabinaandersson.jpg);
+    background-size: cover;
+    height: 323px;
+    width: 280px;
+}
+.project5{
+    background-image: url(/media/sabinaandersson.jpg);
+    background-size: cover;
+    height: 323px;
+    width: 280px;
+}.project6{
+    background-image: url(/media/sabinaandersson.jpg);
+    background-size: cover;
+    height: 323px;
+    width: 280px;
+}.project7{
+    background-image: url(/media/sabinaandersson.jpg);
+    background-size: cover;
+    height: 323px;
+    width: 280px;
+}
