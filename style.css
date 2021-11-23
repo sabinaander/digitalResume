@@ -15,13 +15,12 @@ body{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-/* .rightContainer{
-    display: flex;
+body.subPage{
+    padding-top: 3rem;
+}
 
-} */
-
-.menu img{
-    padding:0;
+.menuContent{
+    padding: 2rem;
 }
 /* HAMBURGERICON */
 /*container for the hamburgermenu*/
@@ -32,8 +31,9 @@ body{
     height: 0.9rem;
     right: 1rem;
     top: 1.5rem;
-    display: flex;
+    display: flex;   
 }
+
 
 /*creates all lines for hamburgericon*/
 
@@ -107,7 +107,7 @@ body{
     right: 0;
     color: black;
     z-index: 60;
-    max-width: 39rem;
+    max-width: 30rem;
     width: 100%;
     display: flex;
     gap: 14vh;
@@ -130,6 +130,19 @@ body{
     height: 50vh;
     display: flex;
     width: 100%;
+}
+
+.secondHeader{
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.secondHeader h1{
+    font-size: 1rem;
 }
 
 h1{
@@ -194,7 +207,7 @@ p{
 li{
     font-size: 1.5rem;
 }
-
+/*PROJECT SECTION*/
 .projectContainer{
     display: flex;
     align-items: center;
@@ -252,14 +265,56 @@ li{
     background-size: cover;
     height: 323px;
     width: 280px;
-}.project6{
+}
+.project6{
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
     width: 280px;
-}.project7{
+}
+.project7{
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
     width: 280px;
+}
+
+
+.footerContainer{
+    background-color: black;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+}
+
+i{
+    font-size: 3rem;
+}
+
+a{
+    color: black;
+}
+
+.galleryContainer{
+    height: 120vh;
+    text-align: center;
+}
+
+.subPage h1{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.smallerText{
+    font-size: 0.5em;
 }
