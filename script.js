@@ -7,3 +7,9 @@ hamburgerMenuBtn.addEventListener('click', () => {
     menu.classList.toggle('active')
     hamburgerIcon.classList.toggle('active')
 })
+
+function openImage(){
+    document.getElementById('galleryItem').classList.remove('previewImage')
+    document.getElementById('galleryItem').classList.add('bigImage')
+}
+
