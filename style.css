@@ -281,19 +281,30 @@ li{
 
 
 .footerContainer{
-    background-color: black;
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
     gap: 20%;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem;   
+}
+
+footer{
+    background-color: black;
     color: white;
 }
 
 .socialMedia{
     display: flex;
     flex-direction: column;
+
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.5rem;
 }
 
 i{
@@ -302,11 +313,6 @@ i{
 
 a{
     color: black;
-}
-
-.galleryContainer{
-    height: 120vh;
-    text-align: center;
 }
 
 .subPage h1{
