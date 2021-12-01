@@ -16,11 +16,11 @@ body{
 }
 
 body.subPage{
-    padding-top: 3rem;
+    padding-top: 3vw;
 }
 
 .menuContent{
-    padding: 2rem;
+    padding: 2vw;
 }
 /* HAMBURGERICON */
 /*container for the hamburgermenu*/
@@ -127,7 +127,7 @@ body.subPage{
 
 .header{
     background-color: rgb(0, 0, 0);
-    height: 50vh;
+    /* height: 50vh; */
     display: flex;
     width: 100%;
     justify-content: center;
@@ -143,7 +143,8 @@ body.subPage{
     z-index: 1;
 }
 p{
-    padding: 1rem;
+    padding: 1vw;
+    text-align: center;
 }
 .secondHeader h1{
     font-size: 1rem;
@@ -151,16 +152,16 @@ p{
 
 h1{
     letter-spacing: 1rem;
-    font-size: 10rem;
-    padding: 2rem;
+    font-size: 7vw;
 }
 
 h2{
     font-size: 5rem;
+    text-align: center;
 }
 
 h3{
-    font-size: 3.5rem;
+    font-size: 3.5vw;
 }
 
 h4{
@@ -185,16 +186,17 @@ p{
 .container{
     display: flex;
     align-items: center;
+    gap: 5vw;
+    padding: 1vw;
 }
 .container img{
     border-radius: 50%;
-    width: 20rem;
-    height: 20rem;  
-    padding: 5rem;  
+    width: 20vw;
+    height: 20vw;   
 }
 
 .mainContainer{
-    padding: 3rem;
+    padding: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +207,7 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10rem;
+    gap: 10vw;
     width: 80%;
 }
 .textSection{
@@ -221,7 +223,7 @@ p{
 }
 .sideSection img{
     max-width: 80%;
-    padding: 2rem;
+    padding: 2vw;
 }
 
 li{
@@ -243,16 +245,20 @@ li{
 }
 
 .hexagon{
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    clip-path: polygon(50% 0, 101% 25%, 101% 75%, 50% 100.07%, 0 75%, 0 25%);
+    overflow: hidden;
     grid-column-end: span 2;
     margin: -3vh 1vw;
     transition: transform .2s;
+    display: block;
 }
 
 .hexagon:hover {
-    transform: scale(1.2);}
+    transform: scale(1.1);
 
-.hexagon:nth-of-type(5n + 1) {
+}
+
+.hexagon:nth-child(5n + 1) {
     grid-column-start: 2;
 }
 
@@ -302,12 +308,13 @@ li{
 
 
 .footerContainer{
+    text-align: center;
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
     gap: 20%;
     justify-content: center;
-    padding: 2rem;   
+    padding: 2vw;   
 }
 
 footer{
@@ -318,7 +325,12 @@ footer{
 .socialMedia{
     display: flex;
     flex-direction: column;
+}
 
+.socialMedia a,
+ .contactContainer a{
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -347,17 +359,9 @@ a{
 }
 
 @media screen and (max-width: 1024px) {
-    .header{
-        height: 20vh ;
-    }
    h1{
        font-size: 2rem;
    } 
-   .container img{
-       max-width: 10rem;
-       max-height: 10rem;
-       padding: 1rem;
-   }
 
    h3{
        font-size: 2rem;
@@ -370,20 +374,12 @@ a{
 
 
 @media screen and (max-width: 920px) {
-    .header{
-        height: 20vh ;
-    }
     .secondHeader{
            height: 10vh ;
     }
    h1{
        font-size: 2rem;
    } 
-   .container img{
-       max-width: 10rem;
-       max-height: 10rem;
-       padding: 1rem;
-   }
 
    h3{
        font-size: 2rem;
@@ -403,13 +399,24 @@ a{
     h1{
         font-size: 2rem;
     } 
+
+    h2{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    p, li{
+        font-size: 1rem;
+    }
+
     .container img{
-        max-width: 10rem;
-        max-height: 10rem;
-        padding: 1rem;
+        max-width: 7rem;
+        max-height: 7rem;
+        padding: 1vw;
     }
  
-    h3{
+    .container h3{
         display: none;
     }
 
@@ -428,6 +435,10 @@ a{
     .header{
         height: 20vh;
     }
+    .container{
+        gap:0;
+        padding: 0;
+    }
     .footerContainer{
         flex-direction: column;
         align-items: center;
@@ -437,26 +448,19 @@ a{
     }
 
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     } 
-    .container img{
-        max-width: 6rem;
-        max-height: 6rem;
-        padding: 0;
-    }
+
     h2{
         font-size: 2rem;
     }
-    h3{
-        display: none;
-    }
+   
     h4{
         font-size: 1.5rem;
     }
 
     .sectionContainer{
         flex-direction: column;
-        gap: 2rem;
     }
 }
 
