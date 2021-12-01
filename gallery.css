@@ -31,13 +31,19 @@
 }
 
 #bigImageContainer{
-    max-width: 1200px;
-    object-fit: cover;
+    
+    
     z-index: 2;
     position: fixed;
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
     left: 50%;
+}
+
+#bigImageContainer img{
+    max-height: 80vh;
+    object-fit: cover;
+    max-width: 80vw;
 }
 
 #shadowContainer{
@@ -66,6 +72,9 @@
 [data-col='5'] {
     grid-column: span 5;   
 }
+[data-col='6'] {
+    grid-column: span 6;   
+}
 [data-row='2'] {
     grid-row: span 2;   
 }
@@ -77,4 +86,7 @@
 }
 [data-row='5'] {
     grid-row: span 5;   
+}
+[data-row='6'] {
+    grid-row: span 6;   
 }

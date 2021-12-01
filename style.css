@@ -15,10 +15,6 @@ body{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-body.subPage{
-    padding-top: 3vw;
-}
-
 .menuContent{
     padding: 2vw;
 }
@@ -29,8 +25,8 @@ body.subPage{
     cursor: pointer;
     position: fixed;
     height: 0.9rem;
-    right: 1rem;
-    top: 1.5rem;
+    right: 1.5vw;
+    top: 3.5vh;
     display: flex;   
 }
 
@@ -127,7 +123,6 @@ body.subPage{
 
 .header{
     background-color: rgb(0, 0, 0);
-    /* height: 50vh; */
     display: flex;
     width: 100%;
     justify-content: center;
@@ -135,10 +130,9 @@ body.subPage{
 
 .secondHeader{
     background-color: rgb(0, 0, 0);
-    height: 5vh;
     display: flex;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
 }
@@ -186,9 +180,10 @@ p{
 .container{
     display: flex;
     align-items: center;
-    gap: 5vw;
-    padding: 1vw;
+    gap: 7vw;
+    padding: 0.5rem
 }
+
 .container img{
     border-radius: 50%;
     width: 20vw;
@@ -212,7 +207,13 @@ p{
 }
 .textSection{
     width: 70%;
+    text-align: left;
 }
+
+.textSection p{
+    text-align: left;
+}
+
 .sideSection{
     display: flex;
     flex-direction: column;
@@ -359,6 +360,7 @@ a{
 }
 
 @media screen and (max-width: 1024px) {
+    
    h1{
        font-size: 2rem;
    } 
@@ -366,17 +368,11 @@ a{
    h3{
        font-size: 2rem;
    }
-
-   .gridContainer{
-    gap: 4.5rem 0;
-   }
 }
 
 
 @media screen and (max-width: 920px) {
-    .secondHeader{
-           height: 10vh ;
-    }
+    
    h1{
        font-size: 2rem;
    } 
@@ -388,7 +384,11 @@ a{
    .hexagon{
     clip-path: none;
     height: 150px;
-}
+    }
+
+    .gridContainer{
+        gap: 4.5rem 0;
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -435,10 +435,16 @@ a{
     .header{
         height: 20vh;
     }
+
     .container{
         gap:0;
         padding: 0;
     }
+
+    .secondHeader .container{
+        padding: 0.5rem;
+    }
+
     .footerContainer{
         flex-direction: column;
         align-items: center;
