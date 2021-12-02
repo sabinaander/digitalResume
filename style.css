@@ -51,7 +51,7 @@ h6 {
 
 p {
     font-size: 1.5rem;
-    padding: 1vw;
+    padding: 1.5vh;
     text-align: center;
 }
 
@@ -75,7 +75,7 @@ p {
 .hamburgerIcon {
     color: white;
     background-color: currentColor;
-    height: 0.3055525rem;
+    height: 4px;
     width: 3.0625rem;
     border-radius: 1px;
     margin-top: -0.2rem;
@@ -94,7 +94,8 @@ p {
 }
 
 .hamburgerIcon:before {
-    height: 0.3055525rem;
+    /* height: 0.305553rem; */
+    height: 4px;
     width: 3.0625rem;
     content: '';
     background-color: currentColor;
@@ -112,7 +113,7 @@ p {
 }
 
 .hamburgerIcon:after {
-    height: 0.3055525rem;
+    height: 4px;
     border-radius: 1px;
     width: 3.0625rem;
     content: '';
@@ -138,17 +139,19 @@ p {
     position: fixed;
     background: var(--clr-dark-blue);
     top:0;
+    bottom: 0;
     right: 0;
     color: black;
     z-index: 1;
-    max-width: 25rem;
+    max-width: 30rem;
     width: 100%;
+    height: 100vh;
+
     display: flex;
     gap: 14vh;
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: auto;
-    height: 100%;
+    overflow-y: auto;  
     transition: all 250ms ease-in-out;
     transform: translateX(100%);
 }
@@ -372,7 +375,7 @@ a {
 }
 
 .rowContainer p {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -425,7 +428,7 @@ a {
 
 @media screen and (max-width: 780px) {
     .header {
-        height: 20vh;
+        height: 15vh;
     }
 
     h1 {
@@ -440,9 +443,6 @@ a {
         font-size: 1.5rem;
     }
 
-    p, li {
-        font-size: 1rem;
-    }
 
     .container img {
         max-width: 7rem;
@@ -465,9 +465,6 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-    .header {
-        height: 20vh;
-    }
     .container {
         gap: 0;
         padding: 0;
@@ -526,9 +523,21 @@ a {
     }
 
     .header {
-        height: 13vh;
+    height: 3.6rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: left;
     }
 
+    .header h1 {
+    font-size: 1rem;
+    margin-left: 0.6rem;
+    }
+    .secondHeader {
+        height: 3.6rem;
+    }
     h1 {
         font-size: 1.2rem;
     }
