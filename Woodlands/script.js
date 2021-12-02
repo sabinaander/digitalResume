@@ -112,13 +112,13 @@ const pages = [
             return /*html*/ `
             <div class="centerContainer cardBox">   
                 <div class="card">
-                    <img src="/media/cat.png" class="charImg">
+                    <img src="media/cat.png" class="charImg">
                     <div class="nextContainer">
                     <p>Well then ${state.name}!<br>
                     The task at hand is simple...<br>
                     You just have to defeat the evil forces, can't be that hard... right?<br>
                     Luckily you have your sword and som PAWSitive energy!</p>  
-                    <img onclick="changeScene(5)" class="nextArrow" src="/media/nextarrow.png"> 
+                    <img onclick="changeScene(5)" class="nextArrow" src="media/nextarrow.png"> 
                     </div>
             </div>
         `
@@ -134,7 +134,7 @@ const pages = [
         content: /*html*/ `
             <div class="centerContainer">
                 <div class="box card">
-                <img src="/media/shroom.png" class="pixelImg">
+                <img src="media/shroom.png" class="pixelImg">
                     <p>You've been wandering through the woods for a long time.<br>
                     Energy is running low, tummy's rumbling...<br>
                     You come across some strange looking mushrooms under a bush.<br>
@@ -166,7 +166,7 @@ const pages = [
                         I feel like anything could happen now! This is for sure the best day of my life.<br>
                         I'm glad I went on this trip!
                         </p>  
-                        <img onclick="changeScene(8)" class="nextArrow" src="/media/nextarrow.png"> 
+                        <img onclick="changeScene(8)" class="nextArrow" src="media/nextarrow.png"> 
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@ const pages = [
                         I feel awfully hungry and slow, but hopefully there'll be a tavern of sorts ahead.<br>
                         I mean... even evil forces need to eat, right?
                         </p>  
-                        <img onclick="changeScene(9)" class="nextArrow" src="/media/nextarrow.png"> 
+                        <img onclick="changeScene(9)" class="nextArrow" src="media/nextarrow.png"> 
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@ const pages = [
                         You must've met Jake. He's a crazy head eating lot's of poisonous mushrooms, he rambles on about quests and evil."</p>
                         <p class="smallText">I've seen those... Orange with pink spots... Close call...</p>
                     </div>
-                    <img onclick="changeScene(12)" class="nextArrow" src="/media/nextarrow.png"> 
+                    <img onclick="changeScene(12)" class="nextArrow" src="media/nextarrow.png"> 
                 </div>
             </div>
         `

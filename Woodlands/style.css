@@ -16,7 +16,7 @@ body {
 }
 
 .backgroundMountains {
-    background: url(/media/Vector-1.png), url(/media/Vector-2.png);
+    background: url(media/Vector-1.png), url(media/Vector-2.png);
     background-size: 100% 70%;
     height: 100vh;
     background-position: bottom;
