@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.whiteText{
+.whiteText {
     color: white;
 }
 
-body{
+body {
     background-color: rgb(226, 225, 225);
     font-family: 'Bebas Neue', sans-serif;
+    min-height: 100%;
 }
 
-.menuContent{
+.menuContent {
     padding: 2vw;
 }
+
 /* HAMBURGERICON */
 /*container for the hamburgermenu*/
 
@@ -26,8 +28,8 @@ body{
     position: fixed;
     height: 0.9rem;
     right: 1.5vw;
-    top: 3.5vh;
-    display: flex;   
+    top: 1.8rem;
+    display: flex;
 }
 
 
@@ -50,7 +52,7 @@ body{
 /*hides one line and makes a +, spins for X*/
 
 .hamburgerIcon.active {
-    transform: rotate( 225deg);
+    transform: rotate(225deg);
     transition-delay: .12s;
     transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -99,7 +101,7 @@ body{
     display: block;
     position: fixed;
     background: var(--clr-dark-blue);
-    top: 3rem;
+    top: 3.6rem;
     right: 0;
     color: black;
     z-index: 1;
@@ -121,14 +123,14 @@ body{
     transform: translateX(0);
 }
 
-.header{
+.header {
     background-color: rgb(0, 0, 0);
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.secondHeader{
+.secondHeader {
     background-color: rgb(0, 0, 0);
     display: flex;
     width: 100%;
@@ -136,108 +138,123 @@ body{
     top: 0;
     z-index: 1;
 }
-p{
+
+p {
     padding: 1vw;
     text-align: center;
 }
-.secondHeader h1{
+
+.secondHeader h1 {
     font-size: 1rem;
 }
 
-h1{
+h1 {
     letter-spacing: 1rem;
     font-size: 7vw;
 }
 
-h2{
+h2 {
     font-size: 5rem;
     text-align: center;
 }
 
-h3{
+h3 {
     font-size: 3.5vw;
 }
 
-h4{
+h4 {
     font-size: 2.5rem;
 }
 
-p{
+p {
     font-size: 1.5rem;
 }
 
-.textBackground{
+.textBackground {
     background-color: black;
     width: 100%;
     margin: 0;
 }
-.textBackground h2{
+
+.textBackground h2 {
     color: white;
     text-align: center;
 }
 
 
-.container{
+.container {
     display: flex;
     align-items: center;
     gap: 7vw;
     padding: 0.5rem
 }
 
-.container img{
+.container img {
     border-radius: 50%;
     width: 20vw;
-    height: 20vw;   
+    height: 20vw;
 }
 
-.mainContainer{
+.mainContainer {
     padding: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sectionContainer{
+.sectionContainer {
     margin-top: 2rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10vw;
-    width: 80%;
-}
-.textSection{
-    width: 70%;
-    text-align: left;
-}
-
-.textSection p{
-    text-align: left;
-}
-
-.sideSection{
-    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
-    width: 30%;
+    width: 80%;
+    gap: 3vh;
+}
+
+.rowContainer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    gap: 3vh;
+    padding: 2rem;
+}
+
+.textSection {
+    width: 80%;
+    text-align: left;
+}
+
+.textSection p {
+    text-align: left;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
     color: white;
 }
-.sideSection img{
-    max-width: 80%;
-    padding: 2vw;
+
+.imageSection img {
+    height: 40vh;
+    width: 18vw;
+    object-fit: cover;
+    padding: 1rem;
 }
 
-li{
+li {
     font-size: 1.5rem;
 }
+
 /*PROJECT SECTION*/
-.projectContainer{
+.projectContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.gridContainer{
+.gridContainer {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -245,7 +262,7 @@ li{
     place-content: center;
 }
 
-.hexagon{
+.hexagon {
     clip-path: polygon(50% 0, 101% 25%, 101% 75%, 50% 100.07%, 0 75%, 0 25%);
     overflow: hidden;
     grid-column-end: span 2;
@@ -264,43 +281,49 @@ li{
 }
 
 
-.project1{
+.project1 {
     background-image: url(/Woodlands/media/printScreen.png);
     background-size: cover;
     height: 323px;
     width: 280px;
 }
-.project2{
+
+.project2 {
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
     width: 280px;
 }
-.project3{
+
+.project3 {
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
     width: 280px;
 }
-.project4{
+
+.project4 {
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
     width: 280px;
 }
-.project5{
+
+.project5 {
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
     width: 280px;
 }
-.project6{
+
+.project6 {
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
     width: 280px;
 }
-.project7{
+
+.project7 {
     background-image: url(/media/sabinaandersson.jpg);
     background-size: cover;
     height: 323px;
@@ -308,181 +331,234 @@ li{
 }
 
 
-.footerContainer{
+.footerContainer {
     text-align: center;
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
     gap: 20%;
     justify-content: center;
-    padding: 2vw;   
+    padding: 2vw;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
 }
 
-.socialMedia{
+.socialMedia {
     display: flex;
     flex-direction: column;
 }
 
 .socialMedia a,
- .contactContainer a{
+.contactContainer a {
     color: white;
     text-decoration: none;
 }
 
 
-.copyright{
+.copyright {
     display: flex;
     justify-content: center;
     letter-spacing: 0.5rem;
 }
 
-i{
+i {
     font-size: 3rem;
 }
 
-a{
+a {
     color: black;
 }
 
-.subPage h1{
+h5 {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    letter-spacing: 1rem;
+    font-size: 12vw;
 }
 
-.smallerText{
+h6 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.smallerText {
     font-size: 0.5em;
 }
 
-@media screen and (max-width: 1024px) {
-    
-   h1{
-       font-size: 2rem;
-   } 
+.rowContainer p {
+    font-size: 1rem;
+}
 
-   h3{
-       font-size: 2rem;
-   }
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .sectionContainer {
+        width: 90vw;
+    }
+
+    .textSection {
+        width: 90vw;
+    }
+
+    .imageSection {
+        width: 90vw;
+    }
+
+    .imageSection img {
+        width: 25vw;
+    }
 }
 
 
 @media screen and (max-width: 920px) {
-    
-   h1{
-       font-size: 2rem;
-   } 
 
-   h3{
-       font-size: 2rem;
-   }
-
-   .hexagon{
-    clip-path: none;
-    height: 150px;
+    h1 {
+        font-size: 2rem;
     }
 
-    .gridContainer{
+    h3 {
+        font-size: 2rem;
+    }
+
+    .hexagon {
+        clip-path: none;
+        height: 150px;
+    }
+
+    .gridContainer {
         gap: 4.5rem 0;
     }
 }
 
 @media screen and (max-width: 780px) {
-    .header{
+    .header {
         height: 20vh;
     }
 
-    h1{
+    h1 {
         font-size: 2rem;
-    } 
+    }
 
-    h2{
+    h2 {
         font-size: 3rem;
     }
-    h4{
+
+    h4 {
         font-size: 1.5rem;
     }
-    p, li{
+
+    p, li {
         font-size: 1rem;
     }
 
-    .container img{
+    .container img {
         max-width: 7rem;
         max-height: 7rem;
         padding: 1vw;
     }
- 
-    .container h3{
+
+    .container h3 {
         display: none;
     }
 
-    .hexagon{
+    .hexagon {
         height: 120px;
         width: 380px;
     }
- 
-    .gridContainer{
-     display: flex;
-     flex-direction: column;
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .header{
+    .header {
         height: 20vh;
     }
 
-    .container{
-        gap:0;
+    .container {
+        gap: 0;
         padding: 0;
     }
 
-    .secondHeader .container{
+    .rowContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .secondHeader .container {
         padding: 0.5rem;
     }
 
-    .footerContainer{
+    .footerContainer {
         flex-direction: column;
         align-items: center;
     }
-    .copyright{
+
+    i {
+        font-size: 2rem;
+    }
+
+    .copyright {
         text-align: center;
     }
 
-    h1{
+    h1 {
         font-size: 1.5rem;
-    } 
+    }
 
-    h2{
+    h2 {
         font-size: 2rem;
     }
-   
-    h4{
+
+    h4 {
         font-size: 1.5rem;
     }
 
-    .sectionContainer{
+    .imageSection {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .imageSection img {
+        width: 70vw;
+        height: 30vh;
     }
 }
 
 @media screen and (max-width: 390px) {
-    .container img{
+    .container img {
         display: none;
     }
-    .header{
-        height:13vh;
+
+    .header {
+        height: 13vh;
     }
 
-    h1{
+    h1 {
         font-size: 1.2rem;
-    } 
-    .hexagon{
+    }
+
+    .hexagon {
         height: 120px;
         width: 310px;
+    }
+
+    .imageSection img {
+        width: 70vw;
+        height: 20vh;
     }
 }

@@ -4,15 +4,15 @@ const menu = document.querySelector(".menu")
 
 const hamburgerIcon = document.querySelector(".hamburgerIcon")
 
-hamburgerMenuBtn.addEventListener('click', function() {
+hamburgerMenuBtn.addEventListener('click', function () {
     menu.classList.toggle('active')
     hamburgerIcon.classList.toggle('active')
 
 })
 
 function closeContainer(container) {
- container.classList.remove('active')
- console.log(closeContainer)
+    container.classList.remove('active')
+    console.log(closeContainer)
 }
 
 //Gallery function to open up bigger image
@@ -21,6 +21,7 @@ function openImage(event) {
     let bigImageContainer = document.getElementById('bigImageContainer')
     let shadowContainer = document.getElementById('shadowContainer')
 
+    // add a darked shade behind image, close the image when clicking outside of image
     if (!bigImageContainer) {
         container = document.createElement('div')
         container.id = 'container'
@@ -31,7 +32,7 @@ function openImage(event) {
         container.appendChild(bigImageContainer)
         container.appendChild(shadowContainer)
         console.log("adding eventlistener ")
-        shadowContainer.addEventListener('click', function() {
+        shadowContainer.addEventListener('click', function () {
             closeContainer(container)
         })
     }
@@ -39,9 +40,9 @@ function openImage(event) {
     let subPageContainer = document.getElementById('subPageContainer')
     let createImage = document.createElement('img')
     createImage.setAttribute('src', event.target.src)
-    bigImageContainer.innerHTML=''
+    bigImageContainer.innerHTML = ''
     bigImageContainer.appendChild(createImage)
     subPageContainer.appendChild(container)
-    
+
     container.classList.add('active')
 }

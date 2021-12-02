@@ -1,4 +1,4 @@
-.subPageContainer{
+.subPageContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -6,33 +6,33 @@
     position: relative;
     margin-top: 3vh;
 }
-.galleryContainer{
+
+.galleryContainer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 1.6rem; 
+    grid-gap: 1.6vw;
     width: 70%;
     z-index: 0;
-    position: relative;  
+    position: relative;
 }
 
-.previewImage img{
+.previewImage img {
     width: 100%;
     height: 100%;
     z-index: 1;
     object-fit: cover;
     transition: transform 300ms;
 }
-#container{
+
+#container {
     display: none;
 }
 
-#container.active{
+#container.active {
     display: block;
 }
 
-#bigImageContainer{
-    
-    
+#bigImageContainer {
     z-index: 2;
     position: fixed;
     top: 50%;
@@ -40,53 +40,70 @@
     left: 50%;
 }
 
-#bigImageContainer img{
+#bigImageContainer img {
     max-height: 80vh;
     object-fit: cover;
     max-width: 80vw;
 }
 
-#shadowContainer{
+#shadowContainer {
     width: 100%;
     height: 100vh;
     background-color: #00000063;
+    /* background-image: url(/media/close-icon.png) no-repeat left; */
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
 .previewImage img:hover {
     transform: scale(1.1);
-    z-index: 0;   
+    z-index: 0;
 }
 
 [data-col='2'] {
     grid-column: span 2;
 }
+
 [data-col='3'] {
     grid-column: span 3;
 }
+
 [data-col='4'] {
-    grid-column: span 4;   
+    grid-column: span 4;
 }
+
 [data-col='5'] {
-    grid-column: span 5;   
+    grid-column: span 5;
 }
+
 [data-col='6'] {
-    grid-column: span 6;   
+    grid-column: span 6;
 }
+
 [data-row='2'] {
-    grid-row: span 2;   
+    grid-row: span 2;
 }
+
 [data-row='3'] {
-    grid-row: span 3;   
+    grid-row: span 3;
 }
+
 [data-row='4'] {
-    grid-row: span 4;   
+    grid-row: span 4;
 }
+
 [data-row='5'] {
-    grid-row: span 5;   
+    grid-row: span 5;
 }
+
 [data-row='6'] {
-    grid-row: span 6;   
+    grid-row: span 6;
+}
+
+@media screen and (max-width: 920px) {
+
+    .galleryContainer {
+        width: 90%;
+    }
 }
