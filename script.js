@@ -10,6 +10,7 @@ hamburgerMenuBtn.addEventListener('click', function () {
 
 })
 
+
 function closeContainer(container) {
     container.classList.remove('active')
     console.log(closeContainer)
