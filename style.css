@@ -261,6 +261,7 @@ li {
 
 .textSection p {
     text-align: left;
+    font-size: 1.9rem;
 }
 
 .imageSection {
@@ -275,6 +276,15 @@ li {
     height: 40vh;
     width: 18vw;
     object-fit: cover;
+}
+
+.subPageContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+    margin-top: 3vh;
 }
 
 /*PROJECT SECTION*/
@@ -292,6 +302,7 @@ li {
     place-content: center;
 }
 
+/* Hexagon "gallery" */
 .hexagon {
     clip-path: polygon(50% 0, 101% 25%, 101% 75%, 50% 100.07%, 0 75%, 0 25%);
     overflow: hidden;
