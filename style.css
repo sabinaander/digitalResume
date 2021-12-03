@@ -13,7 +13,7 @@ body {
     min-height: 100%;
 }
 
-/* Styling for text */
+/* Styling for text, links and such */
 .whiteText {
     color: white;
 }
@@ -55,6 +55,22 @@ p {
     text-align: center;
 }
 
+i {
+    font-size: 3rem;
+}
+
+a {
+    color: black;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+.smallerText {
+    font-size: 0.5em;
+}
+
 /* HAMBURGERICON */
 /*container for the hamburgermenu*/
 
@@ -94,7 +110,6 @@ p {
 }
 
 .hamburgerIcon:before {
-    /* height: 0.305553rem; */
     height: 4px;
     width: 3.0625rem;
     content: '';
@@ -235,6 +250,10 @@ p {
     justify-content: space-between;
 }
 
+.rowContainer p {
+    font-size: 1.5rem;
+}
+
 .textSection {
     width: 80%;
     text-align: left;
@@ -256,10 +275,6 @@ p {
     height: 40vh;
     width: 18vw;
     object-fit: cover;
-}
-
-li {
-    font-size: 1.5rem;
 }
 
 /*PROJECT SECTION*/
@@ -329,7 +344,7 @@ li {
     background-image: url(/media/sabinaandersson.jpg);
 }
 
-
+/* Footer */
 .footerContainer {
     text-align: center;
     display: flex;
@@ -362,21 +377,8 @@ footer {
     letter-spacing: 0.5rem;
 }
 
-i {
-    font-size: 3rem;
-}
 
-a {
-    color: black;
-}
-
-.smallerText {
-    font-size: 0.5em;
-}
-
-.rowContainer p {
-    font-size: 1.5rem;
-}
+/* Media queries */
 
 @media screen and (max-width: 1024px) {
 

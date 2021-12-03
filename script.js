@@ -10,9 +10,9 @@ hamburgerMenuBtn.addEventListener('click', function () {
 
 })
 
+// function to remove the active state of container, and close the big image
 function closeContainer(container) {
     container.classList.remove('active')
-    console.log(closeContainer)
 }
 
 //Gallery function to open up bigger image
